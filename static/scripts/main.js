@@ -12,7 +12,7 @@ $(window).scroll(function(e) {
     } else {
         $('.navbar').removeClass("navbar-hide");
         $('.wrapper').each(function(i) {
-            if (this['id'] == 'contactMe' && $(this).position().top <= scroll+400) {
+            if (this['id'] == 'contactMe' && $(this).position().top <= scroll+500) {
                 $('nav a.active').removeClass('active');
                 $('nav a').eq(i).addClass('active');
             } else if ($(this).position().top <= scroll + 70) {
