@@ -11,13 +11,34 @@
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="static/stylesheets/main.css">
 </head>
 <body>
-    <nav>
-        <div class="navbar navbar-hide navbar-expand-lg nav-colour navbar-dark fixed-top">
-            <div class="container">
-                <h4 class="nav-name my-auto">Elton Kok</h4>
+    <nav class="navbar navbar-hide navbar-expand-lg nav-colour fixed-top">
+        <div class="container">
+            <h4 class="nav-name my-auto">Elton Kok</h4>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-contents"><i class="fas fa-bars fa-2x"></i></button>
+            <div class="collapse navbar-collapse" id="navbar-contents">
+                <ul class="navbar-nav ml-auto text-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#aboutMe"><i class="fas fa-user mr-1"></i>About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills"><i class="fas fa-tools mr-1"></i>Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience"><i class="fas fa-briefcase mr-1"></i>Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects"><i class="fas fa-tasks mr-1"></i>Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contactMe"><i class="fas fa-id-card mr-1"></i>Contact Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="static/temp_resume.pdf" target="blank"><i class="fas fa-file-pdf mr-1"></i>Resume</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
@@ -43,14 +64,14 @@
                     <li class="list-inline-item mr-3"><a href="http://github.com/EltonK888/" target="blank"><span><i class="fab fa-github fa-2x icons"></i></span></a></li>
                     <li class="list-inline-item mr-3"><a href="http://linkedin.com/in/eltonkok" target="blank"><span><i class="fab fa-linkedin fa-2x icons"></i></span></a></li>
                     <li class="list-inline-item mr-3"><a href="mailto:elton.kok@mail.utoronto.ca" target="blank"><span><i class="fas fa-envelope fa-2x icons"></i></span></a></li>
-                    <li class="list-inline-item mr-3"><a href="temp_resume.pdf" target="blank"><span><i class="fa fa-file-pdf-o fa-2x icons"></i></span></a></li>
+                    <li class="list-inline-item mr-3"><a href="static/temp_resume.pdf" target="blank"><span><i class="fa fa-file-pdf-o fa-2x icons"></i></span></a></li>
                 </ul>
             </div> 
         </div>
     </div>
     <div class="container">
-        <hr class="line-section">
-        <div id="aboutMe">
+        <hr class="line-section wrapper" id="aboutMe">
+        <div id="aboutMe-section">
             <h2>About <span class="heading-trim">Me</span></h2>
             <p> Hi I'm Elton, a <a href="http://www.utoronto.ca/" class="link">U of T</a> graduate in Biochemistry and Human Biology. During my work term at <a href="http://www.sanofipasteur.ca" class="link">Sanofi Pasteur</a>
                 , I worked in the molecular biology unit in the research and development department and had the opportunity to learn a lot about DNA sequencing analysis. I was fascinated
@@ -58,8 +79,8 @@
                 a passion for software development and I am now persuing a career in the tech industry.
             </p>
         </div>
-        <hr class="line-section">
-        <div id="skils">
+        <hr class="line-section" id="skills">
+        <div id="skills-section" class="wrapper">
             <h2>Technical <span class="heading-trim">Skills</span></h2>
             <h3>Programming <span class="heading-trim">Languages</span></h3>
             <ul class="list-inline tech-icons">
@@ -124,7 +145,7 @@
                 </li>
                 <li class="list-inline-item">
                     <div class="icon-label">
-                        <img class="dev-icon" src="http://flask.pocoo.org/docs/0.12/_static/flask.png">
+                        <img class="dev-icon" src="static/images/flask.png">
                         <span>Flask</span>
                     </div>
                 </li>
@@ -141,20 +162,20 @@
                 </li>
                 <li class="list-inline-item">
                     <div class="icon-label">
-                        <img class="dev-icon" src="kisspng-bash-unix-shell-unix-shell-scalable-vector-graphic-github-adentintime-holberton-systemengineering-5b70ee2dd2ad37.0387236415341276618629.png">
+                        <img class="dev-icon" src="static/images/kisspng-bash-unix-shell-unix-shell-scalable-vector-graphic-github-adentintime-holberton-systemengineering-5b70ee2dd2ad37.0387236415341276618629.png">
                         <span> Unix/Bash</span>
                     </div>
                 </li>
                 <li class="list-inline-item">
                     <div class="icon-label">
-                        <img class="dev-icon" src="database.png">
+                        <img class="dev-icon" src="static/images/database.png">
                         <span>SQL</span>
                     </div>
                 </li>
             </ul>
         </div>
-        <hr class="line-section">
-        <div id="experience">
+        <hr class="line-section wrapper" id="experience">
+        <div id="experience-section">
             <h2>Experience</h2>
             <div class="card mb-5">
                 <div class="card-body">
@@ -183,13 +204,17 @@
                     </ul>
                 </div>
             </div>
+            <div class="col-lg-3 mt-4 ml-auto justify-content-end text-center">
+                <p> View more here: </p>
+                <a href="static/temp_resume.pdf" target="blank" role="button" class="btn btn-block">view resume<i class="fas fa-file-pdf ml-2"></i></a>
+            </div>
 
         </div>
-        <hr class="line-section">
-        <div id="projects">
+        <hr class="line-section wrapper" id="projects">
+        <div id="projects-section">
             <h2>Projects</h2>
             <div class="card mb-5">
-                <img src="Capture.PNG" class="card-img-top" alt="C search engine image">
+                <img src="static/images/Capture.PNG" class="card-img-top" alt="C search engine image">
                 <div class="card-body">
                     <div class="row">
                         <h3 class="col-md card-title">Simple C <span class="heading-trim">Search Engine</span></h3>
@@ -207,13 +232,13 @@
                             </ul>
                         </div>
                         <div class="col-lg-auto my-lg-auto mb-4">
-                            <a href="http://www.github.com/EltonK888/Simple_C_Search_Engine/" target="blank"><button class="btn btn-block" type="button">view on github<i class="fab fa-github ml-2"></i></button></a>
+                            <a href="http://www.github.com/EltonK888/Simple_C_Search_Engine/" target="blank" class="btn btn-block">view on github<i class="fab fa-github ml-2"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="card mb-5">
-                <img src="CSCB20.PNG" class="card-img-top" alt="CSCB20 website redesign">
+                <img src="static/images/CSCB20.PNG" class="card-img-top" alt="CSCB20 website redesign">
                 <div class="card-body">
                     <div class="row">
                         <h3 class="col-md card-title">CSCB20 Site <span class="heading-trim">Redesign</span></h3>
@@ -249,33 +274,33 @@
                                 </li>
                                 <li class="list-inline-item">
                                     <div class="icon-label">
-                                        <img class="dev-icon" src="http://flask.pocoo.org/docs/0.12/_static/flask.png">
+                                        <img class="dev-icon" src="static/images/flask.png">
                                     </div>
                                 </li>
                                 <li class="list-inline-item">
                                     <div class="icon-label">
-                                        <img class="dev-icon" src="database.png">
+                                        <img class="dev-icon" src="static/images/database.png">
                                     </div>
                                 </li>
                             </ul>
                         </div>
                         <div class="col-lg-auto my-lg-auto mb-4">
-                            <a href="http://eltonk888.pythonanywhere.com/" target="blank"><button class="btn btn-block" type="button">view live!<i class="fas fa-external-link-alt ml-2"></i></button></a>
+                            <a href="http://eltonk888.pythonanywhere.com/" target="blank" class="btn btn-block">view live!<i class="fas fa-external-link-alt ml-2"></i></a>
                         </div>
                         <div class="col-lg-auto my-lg-auto mb-4">
-                            <a href="http://www.github.com/EltonK888/CSCB20-Redesign" target="blank"><button class="btn btn-block" type="button">view on github<i class="fab fa-github ml-2"></i></button></a>
+                            <a href="http://www.github.com/EltonK888/CSCB20-Redesign" target="blank" class="btn btn-block">view on github<i class="fab fa-github ml-2"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="card mb-5">
-                <img src="discord_bot.PNG" class="card-img-top" alt="CSCB20 website redesign">
+                <img src="static/images/discord_bot.PNG" class="card-img-top" alt="CSCB20 website redesign">
                 <div class="card-body">
                     <div class="row">
                         <h3 class="col-md card-title">Kok <span class="heading-trim">Bot</span></h3>
                     </div>
                     <h5 class="card-subtitle mb-3 text-muted">A disord bot created using discord.py API</h5>
-                    <p class="mx-4">This is a fun side project that I did. I wanted to create a fun bot on discord that would respond to certain messages by my friends. I learned how to use the discord.py API and improved my python skills by learning Asynchronous I/O.</p>
+                    <p class="mx-4">This is a fun side project that I did. I wanted to create a fun bot on discord that would respond to certain messages by my friends. I learned how to use the discord.py API and improved my python skills by learning Asynchronous I/O. I also learned how to use cloud computing services such as Heroku to deploy the bot.</p>
                     <div class="row">
                         <div class="col-auto mr-auto mb-4 mb-lg-auto">
                             <ul class="list-inline icons-no-margin align-items-center">
@@ -289,13 +314,13 @@
                             </ul>
                         </div>
                         <div class="col-lg-auto my-lg-auto mb-4">
-                            <button class="btn btn-block disabled" disabled>this one's private since it contains silliness ;)<i class="fab fa-github ml-2"></i></button>
+                            <a class="btn btn-block disabled" href="#" disabled>this one's private since it contains silliness ;)<i class="fab fa-github ml-2"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
              <div class="card mb-5">
-                <img src="portfolio_site.PNG" class="card-img-top" alt="CSCB20 website redesign">
+                <img src="static/images/portfolio_site.PNG" class="card-img-top" alt="CSCB20 website redesign">
                 <div class="card-body">
                     <div class="row">
                         <h3 class="col-md card-title">Personal <span class="heading-trim">Website</span></h3>
@@ -329,14 +354,14 @@
                             </ul>
                         </div>
                         <div class="col-lg-auto my-lg-auto mb-4">
-                            <a href="http://www.github.com/EltonK888/EltonK888.github.io" target="blank"><button class="btn btn-block" type="button">view on github<i class="fab fa-github ml-2"></i></button></a>
+                            <a href="http://www.github.com/EltonK888/EltonK888.github.io" target="blank" role="button" class="btn btn-block">view on github<i class="fab fa-github ml-2"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <hr class="line-section">
-        <div id="contactMe">
+        <hr class="line-section wrapper" id="contactMe">
+        <div id="contactMe-section">
             <div class="text-center">
                 <h2>Contact <span class="heading-trim">Me</span></h2>
                 <p>If you want to get in touch with me, feel free to email me at <a href="mailto:elton.kok@mail.utoronto.ca" class="link">elton.kok@mail.utoronto.ca</a></p>
@@ -344,32 +369,27 @@
         </div>
     </div>
     <footer>
-        <div class="container-fluid text-center" id="contact-links">
-            <i class="fab fa-linkedin fa-4x"></i>
-            <i class="fab fa-github fa-4x"></i>
-            <i class="fa fa-envelope fa-4x"></i>
-            <i class="fa fa-file-pdf-o fa-4x"></i>
+        <div class="container text-center" id="contact-links">
+            <ul class="list-inline">
+                <li class="list-inline-item mr-4 ml-4 mb-4 mb-md-0">
+                    <a href="http://www.linkedin.com/in/eltonkok/" target="blank"><i class="fab fa-linkedin fa-4x my-auto"></i></a>
+                </li>
+                <li class="list-inline-item mr-4 ml-4 mb-4 mb-md-0">
+                    <a href="http://www.github.com/EltonK888/" target="blank"><i class="fab fa-github fa-4x"></i></a>
+                </li>
+                <li class="list-inline-item mr-4 ml-4 mb-4 mb-md-0">
+                    <a href="mailto:elton.kok@mail.utoronto.ca"><i class="fa fa-envelope fa-4x"></i></a>
+                </li>
+                <li class="list-inline-item mr-4 ml-4 mb-4 mb-md-0">
+                    <a href="static/temp_resume.pdf" target="blank"><i class="fa fa-file-pdf-o fa-4x"></i></a>
+                </li>
+            </ul>
+            <p>Made by Elton Kok &copy; 2019</p>
         </div>
     </footer>
-
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script>
-        $(document).ready( function() {
-            $('navbar').show();
-        })
-        $(window).scroll(function(e) {
-
-            // add/remove class to navbar when scrolling to hide/show
-            var scroll = $(window).scrollTop();
-            if (scroll < 100) {
-                $('.navbar').addClass("navbar-hide");
-            } else {
-                $('.navbar').removeClass("navbar-hide");
-            }
-
-            });
-    </script>
+    <script src="static/scripts/main.js"></script>
 </body>
 </html>

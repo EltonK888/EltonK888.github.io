@@ -31,7 +31,7 @@ hr {
     text-shadow: 0 1px black;
 }
 .bg-image {
-    background-image: url("https://stmed.net/sites/default/files/clouds-wallpapers-25182-8223435.jpg");
+    background-image: url("../images/clouds-wallpapers-25182-8223435.jpg");
     height: 100%;
     background-repeat: no-repeat;
     background-blend-mode: soft-light;
@@ -43,16 +43,35 @@ hr {
 }
 .nav-colour {
     background-color: #00478d;
+    color: #f2b82e;
 }
 .nav-name {
     font-size: 2em;
     color: #f2b82e;
 }
 .navbar {
+    padding: 0;
     transition: top 0.5s ease;
 }
 .navbar-hide {
-    top: -56px;
+    top: -60px;
+}
+.fa-bars {
+    color: #f2b82e;
+}
+.nav-link {
+    color: #f2b82e;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1em;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+nav .active {
+    background-color:rgba(72, 125, 240, 0.438);
+}
+.nav-link:hover {
+    color: #ffffff;
+    transition: 0.3s ease-in;
 }
 .heading-trim {
     color: #f2b82e;
@@ -101,16 +120,13 @@ h3 {
     font-family: 'Roboto', sans-serif;
 }
 .card-img-top {
-    background-image: url("Capture.PNG");
+    background-image: url("../images/Capture.PNG");
     background-attachment: fixed;
 }
-button {
-    font-family: 'Roboto', sans-serif;
-}
-
 .btn {
     background-color: #00478d;
     color: #ffffff;
+    font-family: 'Roboto', sans-serif;
 }
 .btn:hover {
     color: #f2b82e;
@@ -122,9 +138,23 @@ button {
     color: #ffffff;
 }
 footer {
-    height: 300px;
+    height: 350px;
     background-color: #00478d;
     color: #f2b82e;
     display: flex;
     align-items: center;
+}
+
+footer i {
+    border: 2px solid #f2b82e;
+    color: #f2b82e;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+footer i:hover {
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    transform: scale(1.05);
+    transition: 0.2s ease-in-out;
 }
