@@ -1,142 +1,35 @@
+/********** Global Styles **************/
 html {
     scroll-behavior: smooth;
 }
+
 body {
     font-family: 'Lora', serif;
     color: #00478d;
     background-color: rgba(181, 214, 245, 0.438);
 }
+
+h2 {
+    font-weight: bold;
+}
+
+h2, h3 {
+    padding-bottom: 30px;
+}
+
 p {
     font-family: 'Roboto', sans-serif;
     font-size: 1.2em;
 }
+
 hr {
     background-color: #00478d;
 }
-.icons {
-    color: #00478d;
-    border-radius: 100px;
-}
-.icons:hover {
-    color: #f2b82e;
-    transition: 0.2s ease-in;
-}
-.media-links {
-    display: flex;
-    justify-content: flex-start;
-}
-.lead-section {
-    padding-top: 25%;
-    padding-bottom: 15%;
-    text-shadow: 0 1px black;
-}
-.bg-image {
-    background-image: url("../images/clouds-wallpapers-25182-8223435.jpg");
-    height: 100%;
-    background-repeat: no-repeat;
-    background-blend-mode: soft-light;
-    background-size: cover;
-    background-attachment: fixed;
-}
-.carousel-item {
-    transition: transform 2s ease, opacity 0.5s ease-out;
-}
-.nav-colour {
-    background-color: #00478d;
-    color: #f2b82e;
-}
-.nav-name {
-    font-size: 2em;
-    color: #f2b82e;
-}
-.navbar {
-    padding: 0;
-    transition: top 0.5s ease;
-}
-.navbar-hide {
-    top: -60px;
-}
-.fa-bars {
-    color: #f2b82e;
-}
-.nav-link {
-    color: #f2b82e;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.1em;
-    padding-top: 12px;
-    padding-bottom: 12px;
-}
+
 nav .active {
     background-color:rgba(72, 125, 240, 0.438);
 }
-.nav-link:hover {
-    color: #ffffff;
-    transition: 0.3s ease-in;
-}
-.heading-trim {
-    color: #f2b82e;
-}
-.link {
-    color: #f2b82e;
-    text-decoration: underline;
-}
-.line-section {
-    margin: 50px 0px 50px;
-}
-h2 {
-    padding-bottom: 30px;
-    font-weight: bold;
-}
-h3 {
-    padding-bottom: 30px;
-}
-.tech-icons {
-    margin-bottom: 38px;
-}
-.dev-icon {
-    height: 70px;
-    width: auto;
-    display: flex;
-    flex-direction: column;
-}
-.icon-label {
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-}
-.list-inline-item {
-    text-align: center;
-}
-.card {
-    background-color: rgba(181, 214, 245, 0.438);
-}
-.card-title {
-    font-weight: bold;
-}
-.card-text {
-    padding-top: 3px;
-    padding-bottom: 3px;
-    font-size: 1.2em;
-    font-family: 'Roboto', sans-serif;
-}
-.card-img-top {
-    background-image: url("../images/Capture.PNG");
-    background-attachment: fixed;
-}
-.btn {
-    background-color: #00478d;
-    color: #ffffff;
-    font-family: 'Roboto', sans-serif;
-}
-.btn:hover {
-    color: #f2b82e;
-}
-.icons-no-margin{
-    margin: 0;
-}
-.disabled:hover {
-    color: #ffffff;
-}
+
 footer {
     height: 350px;
     background-color: #00478d;
@@ -157,4 +50,135 @@ footer i:hover {
     color: #ffffff;
     transform: scale(1.05);
     transition: 0.2s ease-in-out;
+}
+
+/************ Navbar Styles *************/
+.navbar {
+    padding: 0;
+    transition: top 0.5s ease;
+}
+    .fa-bars {
+        color: #f2b82e;
+    }
+
+    .nav-colour {
+        background-color: #00478d;
+    }
+
+    .nav-name {
+        font-size: 2em;
+        color: #f2b82e;
+    }
+
+    .navbar-hide {
+        top: -60px;
+    }
+
+    .nav-link {
+        color: #f2b82e;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.1em;
+        padding: 12px 0 12px 0;
+    }
+
+    .nav-link:hover {
+        color: #ffffff;
+        transition: 0.3s ease-in;
+    }
+
+/****************Lead section***************/
+.lead-section {
+    padding: 25% 0 15% 0;
+    text-shadow: 0 1px black;
+}
+    .bg-image {
+    background-image: url("../images/clouds-wallpapers-25182-8223435.jpg");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    }
+    
+    .carousel-item {
+        transition: transform 2s ease, opacity 0.5s ease-out;
+    }
+
+    .icons {
+        color: #00478d;
+    }
+
+    .icons:hover {
+        color: #f2b82e;
+        transition: 0.2s ease-in;
+    }
+    .media-links {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+/***********Technical Skills************/
+.dev-icon {
+    height: 70px;
+    width: auto;
+}
+
+.icon-label {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+.tech-icons {
+    margin-bottom: 38px;
+}
+
+/*************Experience+Projects****************/
+.card {
+    background-color: rgba(181, 214, 245, 0.438);
+}
+    .card-title {
+        font-weight: bold;
+    }
+
+    .card-text {
+        padding: 3px 0 3px 0;
+        font-size: 1.2em;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .icons-no-margin{
+    margin: 0;
+    }
+
+/**************Buttons******************/
+.btn {
+    background-color: #00478d;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+}
+    .btn:hover {
+        color: #f2b82e;
+    }
+
+    .disabled:hover {
+        color: #ffffff;
+    }
+
+
+/***************Misc Styles**************/
+.link {
+    color: #f2b82e;
+    text-decoration: underline;
+}
+
+.line-section{
+    margin: 50px 0px 50px;
+}
+
+.heading-trim {
+    color: #f2b82e;
+}
+
+.list-inline-item {
+    text-align: center;
 }
