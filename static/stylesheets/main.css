@@ -4,12 +4,14 @@
 /********** Global Styles **************/
 html {
     scroll-behavior: smooth;
+    height: 100%;
 }
 
 body {
     font-family: 'Lora', serif;
     color: #00478d;
-    background-color: rgba(181, 214, 245, 0.438);
+    background: rgba(182, 214, 245, 0.438);
+    height: 100%;
 }
 
 h2 {
@@ -91,23 +93,32 @@ footer i:hover {
 
 /****************Lead section***************/
 .lead-section {
-    padding: 25% 0 15% 0;
+    padding: 15% 0 15% 0;
     text-shadow: 0 1px black;
+    height: auto;
+    display: flex;
+    align-items: center;
 }
+    .lead-text {
+        color: #ffffff;
+        text-align: center;
+    }
     .bg-image {
-    background-image: url("../images/clouds-wallpapers-25182-8223435.jpg");
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+        background-image: url("");
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
     }
     
     .carousel-item {
         transition: transform 2s ease, opacity 0.5s ease-out;
+        text-align: center;
+        color: #ffffff;
     }
 
     .icons {
-        color: #00478d;
+        color: #ffffff;
     }
 
     .icons:hover {
@@ -116,8 +127,25 @@ footer i:hover {
     }
     .media-links {
         display: flex;
-        justify-content: flex-start;
+        justify-content: center;
     }
+
+#particles-js{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    background-color:  rgb(95, 167, 238);
+    background-image: url('');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+canvas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
 
 /***********Technical Skills************/
 .dev-icon {
@@ -135,6 +163,10 @@ footer i:hover {
     margin-bottom: 38px;
 }
 
+.react-icon {
+    font-size: 53pt;
+}
+
 /*************Experience+Projects****************/
 .card {
     background-color: rgba(181, 214, 245, 0.438);
@@ -150,7 +182,7 @@ footer i:hover {
     }
 
     .icons-no-margin{
-    margin: 0;
+        margin: 0;
     }
 
 /**************Buttons******************/
@@ -184,6 +216,7 @@ footer i:hover {
 
 .list-inline-item {
     text-align: center;
+    vertical-align: top;
 }
 
 /******** Created by Elton Kok &copy; 2019 **********/
