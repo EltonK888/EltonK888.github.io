@@ -103,6 +103,11 @@ footer i:hover {
         color: #ffffff;
         text-align: center;
     }
+    .secondary-lead-text {
+        color: #ffffff;
+        font-size: 2em;
+        text-align: center;
+    }
     .bg-image {
         background-image: url("");
         height: 100%;
@@ -131,13 +136,21 @@ footer i:hover {
     }
     .arrow-down {
         position: absolute;
-        bottom: 5%;
+        height: 70px;
+        bottom: 1%;
+        width: 45px;
         left: 50%;
+        margin-left: -22.5px;
     }
     .bounce {
         -moz-animation: bounce 2s infinite;
         -webkit-animation: bounce 2s infinite;
         animation: bounce 2s infinite;
+    }
+    #spacer {
+        width: 200px;
+        height: 100px;
+        float: left;
     }
 
     @keyframes bounce {
